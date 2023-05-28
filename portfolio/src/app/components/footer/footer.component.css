@@ -1,0 +1,81 @@
+/* Estilos generales */
+:root {
+    --main-color: #your-main-color;
+    --white-color: #your-white-color;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del footer */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9%;
+    background: var(--main-color);
+  }
+  
+  #current-year {
+    color: var(--white-color);
+  }
+  
+  .footer-text p {
+    font-size: 1rem;
+    color: var(--white-color);
+    margin: 0;
+  }
+  
+  /* Estilos del icono de scroll */
+  .footer-iconTop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .footer-iconTop.show {
+    opacity: 1;
+  }
+  
+  .footer-iconTop:hover {
+    background: var(--white-color);
+    color: var(--main-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-iconTop i {
+    font-size: 2rem;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 760px) {
+    .footer {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .footer-text p {
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  
+    .footer-iconTop {
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  
