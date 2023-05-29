@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     const typed = new Typed('.multiple-texto', {
       strings: ['Front-End Developer'],
-      typeSpeed: 100,
-      backSpeed: 100,
+      typeSpeed: 120,
+      backSpeed: 120,
       backDelay: 1000,
       loop: true
     });

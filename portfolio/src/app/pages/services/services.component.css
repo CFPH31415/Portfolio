@@ -4,15 +4,15 @@
     margin-bottom: 2rem;
     color: var(--main-color);
     text-transform: uppercase;
-}
-
-.services span {
+  }
+  
+  .services span {
     color: var(--main-color);
     font-weight: bold;
     text-decoration: underline;
-}
-
-.services-container {
+  }
+  
+  .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -23,9 +23,9 @@
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.services-box {
+  }
+  
+  .services-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,34 +38,34 @@
     border: 0.2rem solid var(--main-color);
     transition: transform 0.5s ease;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.services-box:hover {
+  }
+  
+  .services-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-}
-
-.services-box i {
+  }
+  
+  .services-box i {
     font-size: 3rem;
     color: var(--main-color);
     margin-bottom: 1rem;
-}
-
-.services-box h3 {
+  }
+  
+  .services-box h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     font-weight: bold;
-    color: var(--accent-color); /* Added accent-color */
-    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); /* Added text-shadow */
-}
-
-.services-box p {
+    color: var(--accent-color);
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-box p {
     font-size: 1rem;
     margin: 1.5rem 0;
-    line-height: 1.3; /* Added line-height */
-}
-
-.btn {
+    line-height: 1.3;
+  }
+  
+  .btn {
     display: inline-block;
     padding: 0.6rem 1.8rem;
     background: var(--main-color);
@@ -78,26 +78,27 @@
     transition: box-shadow 0.5s ease;
     cursor: pointer;
     text-decoration: none;
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     box-shadow: none;
-    transform: translateY(-2px); /* Added vertical hover effect */
-}
-
-@media (max-width: 1200px) {
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 1200px) {
     .services-container {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width: 760px) {
+  }
+  
+  @media (max-width: 760px) {
     .services h2 {
-        font-size: 2.2rem;
+      font-size: 2.2rem;
     }
-    
+  
     .services-container {
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
     }
-}
+  }
+  

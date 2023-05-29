@@ -58,7 +58,7 @@
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 1.8rem; /* Increase the font size */
+    font-size: 1.8rem; 
     color: var(--main-color);
     margin-right: 1rem;
     transition: .5s ease;
@@ -126,7 +126,6 @@
     }
   }
   
-  /* Custom CSS for Extremely Complex Design */
   
   .home {
     background: linear-gradient(135deg, #1638c1, #ffcd00);
@@ -169,7 +168,7 @@
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
-    margin-top: 1.5rem; /* Add margin-top property */
+    margin-top: 1.5rem; 
   }
   
   .btn:hover {

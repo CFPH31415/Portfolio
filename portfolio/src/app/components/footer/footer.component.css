@@ -1,4 +1,3 @@
-/* Estilos generales */
 :root {
     --main-color: #your-main-color;
     --white-color: #your-white-color;
@@ -9,7 +8,6 @@
     padding: 0;
   }
   
-  /* Estilos del footer */
   .footer {
     display: flex;
     justify-content: center;
