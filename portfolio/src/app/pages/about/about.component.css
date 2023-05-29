@@ -1,9 +1,9 @@
 :root {
   --header-color: #f9f9f9;
   --main-color: #000000;
-  --secondary-color: #ff0000;
+  --secondary-color: #2fbebb;
   --transition-duration: 0.3s;
-  --background-gradient: linear-gradient(135deg, #cf1818 0%, #24a524 50%, #1111d5 100%);
+  --background-gradient: linear-gradient(135deg, #cf1818 0%, #001700 50%, #2d2d34 100%);
 }
 
 .about {
