@@ -8,7 +8,7 @@ export class ServicesComponent {
 
   servicios = [
     {
-      titulo: 'Web developer',
+      titulo: 'Web development',
       descripcion: 'As a Front-End Developer, I offer skills and services related to web development. In addition, create attractive and functional user interfaces using HTML, CSS, and JavaScript, and I specialize in using the Angular framework. I work collaboratively with designers to implement graphic designs into interactive web pages, ensuring consistency in appearance and functionality. Additionally, I focus on optimizing website performance by employing techniques and tools to ensure speed and efficiency. My goal is to create responsive designs that adapt to different devices and browsers, delivering an exceptional user experience. I add interactivity through animations and advanced functionalities.',
       textoExtra: 'In summary, as a Front-End Developer, I utilize the Angular framework to create attractive and functional interfaces, enhancing the user experience in web development.',
       icono: 'bx bx-code-alt'
