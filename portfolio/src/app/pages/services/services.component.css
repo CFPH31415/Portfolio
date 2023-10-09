@@ -7,9 +7,8 @@
   }
   
   .services span {
-    color: var(--main-color);
+    color: black;
     font-weight: bold;
-    text-decoration: underline;
   }
   
   .services-container {
