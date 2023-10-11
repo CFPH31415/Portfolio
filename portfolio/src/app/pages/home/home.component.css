@@ -52,7 +52,8 @@ span {
   margin-bottom: 2rem;
 }
 
-.social-media a {
+.social-media a,
+.social-media a img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -65,25 +66,32 @@ span {
   color: var(--main-color);
   margin-right: 1rem;
   transition: .5s ease;
+  vertical-align: middle; 
 }
 
 .social-media a:last-child {
   margin-right: 0;
 }
 
-.social-media a:hover {
+.social-media a:hover,
+.social-media a:hover img {
   background: var(--main-color);
   color: var(--white-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
 
-.social-media a i.bxl-github {
+.social-media a i.bxl-github,
+.social-media a i.bxl-linkedin,
+.social-media a img.certificate-img {
   color: black;
+}
+.social-media a img.certificate-img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  margin: 0.3rem; 
 }
 
-.social-media a i.bxl-linkedin {
-  color: black;
-}
 
 .btn {
   display: inline-block;
@@ -96,7 +104,8 @@ span {
   letter-spacing: .1rem;
   font-weight: 600;
   transition: .5s ease;
-  margin-top: 2rem; 
+  margin-top: 2rem;
+  vertical-align: middle;
 }
 
 .btn:hover {
@@ -107,32 +116,32 @@ span {
 
 @media (max-width: 992px) {
   .home {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 760px) {
   .home {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .home-content h3 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .home-content h1 {
-      font-size: 2.8rem;
+    font-size: 2.8rem;
   }
 
   .home-content > h3,
   h1,
   p {
-      text-align: center;
+    text-align: center;
   }
 
   .home-img img {
-      width: 90vw;
-      padding: 70px 0 0 0;
+    width: 90vw;
+    padding: 70px 0 0 0;
   }
 }

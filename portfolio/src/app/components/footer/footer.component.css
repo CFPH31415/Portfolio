@@ -26,7 +26,6 @@
     margin: 0;
   }
   
-  /* Estilos del icono de scroll */
   .footer-iconTop {
     position: fixed;
     display: flex;
@@ -59,7 +58,6 @@
     font-size: 2rem;
   }
   
-  /* Estilos responsivos */
   @media (max-width: 760px) {
     .footer {
       flex-direction: column;
