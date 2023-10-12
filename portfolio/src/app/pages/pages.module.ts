@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
+import { ContactmeComponent } from './contactme/contactme.component';
+
 
 
 @NgModule({
@@ -12,6 +14,7 @@ import { PortafolioComponent } from './portafolio/portafolio.component';
     AboutComponent,
     ServicesComponent,
     PortafolioComponent,
+    ContactmeComponent
   ],
   imports: [
     CommonModule
@@ -21,6 +24,7 @@ import { PortafolioComponent } from './portafolio/portafolio.component';
     AboutComponent,
     ServicesComponent,
     PortafolioComponent,
+    ContactmeComponent
   ]
 })
 export class PagesModule { }
