@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+.about {
+  background-color: #043a3ad4;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #818dbc;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.about h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ff5733;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about h1:hover::after {
+  transform: scaleX(1);
+}
+
+.hardSkill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hardSkill img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.hardSkill img:hover {
+  transform: scale(1.1);
+  border-color: #ff5733;
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.4);
+}
+
+.hardSkill img::alt {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-content h1 {
+  animation: slideIn 0.5s ease-in-out;
+  margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .hardSkill {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .hardSkill img {
+    display: inline-block;
+  }
+}

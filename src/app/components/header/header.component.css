@@ -1,0 +1,151 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1.25rem 9%;
+  background: linear-gradient(45deg, #237bd3, #3be0eb);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  color: #160101;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-right: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header.sticky {
+  border-bottom: 0.1rem solid #250354;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 0.6rem;
+  padding: 0.4rem 0.9rem;
+  color: #180202;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #1281d5;
+}
+
+.slider {
+  position: absolute;
+  border: 2px solid #FF4500;
+  color: #FFFFFF;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 34px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #FF4500;
+  transition: all 0.3s ease;
+}
+
+input:checked + .slider {
+  background-color: #FF8C00;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  background-color: #FFFFFF;
+}
+
+.darkMode-icon {
+  font-size: 1.2rem;
+  margin-left: 4px;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+#menu-icon:hover {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 980px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .header {
+    padding: 1.25rem 7%;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #FF8C00, #FF4500);
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #0b0101;
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    padding: 1rem 6%;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+}
