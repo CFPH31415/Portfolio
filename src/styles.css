@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  :root {
+    --bg-color: #e4e9c2;
+    --text-color: #1C3A38;
+    --main-color: #FF7F11;
+    --white-color: #E5F4F1;
+    --icon-color: #FFD700;
+    --bg-formulario: #E5F4F1;
+    --bg-theme: #5054ca;
+    --shadow-color: rgba(0, 0, 0, .3);
+    --border-bottom: rgba(0, 0, 0, .3);
+  }
+  
+  body {
+    background-color: #3fe9c7;
+    color: var(--text-color);
+  }
+  
+  section {
+    min-height: 50vh;
+    padding: 6.5rem 9% 2rem;
+  }
+  
