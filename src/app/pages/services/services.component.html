@@ -6,11 +6,7 @@
             <h3>{{ servicio.titulo }}</h3>
             <p [id]="'servicios' + i" [ngClass]="{'servicios-corto': !mostrarCompleto[i]}">
                 {{ servicio.descripcion }}
-                <span [id]="'servicios-extra' + i" [hidden]="mostrarCompleto[i]" class="servicios-extra">
-                    {{ servicio.textoExtra }}
-                </span>
             </p>
-            <a class="btn" (click)="alternarMostrar(i)">{{ mostrarCompleto[i] ? 'Read more' : 'Read Less' }}</a>
         </div>
     </div>
 </section>

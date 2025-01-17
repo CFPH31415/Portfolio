@@ -82,3 +82,19 @@ button[type="submit"]:hover {
     background-color: #ff1493; 
     transform: scale(1.1); 
 }
+
+#phone {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px;  
+    border-radius: 5px; 
+    border: 1px solid #ccc;  
+  }
+  
+  @media screen and (max-width: 640px) {
+    #phone {
+      width: 100%;  
+    }
+  }
+  
+  
