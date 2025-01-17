@@ -22,6 +22,7 @@
     "portfolio": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typed.js": "^2.0.12",
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
